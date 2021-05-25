@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
 using modelos;
+using Microsoft.EntityFrameworkCore.SqlServer;
 
 namespace bakend
 {
@@ -30,8 +31,8 @@ namespace bakend
         {
 
             services.AddControllers();
-            services.AddDbContext<dbContexto>(
-        options => options.UseSqlServer("DbCon"));
+            services.AddDbContext<ApplicationDbContext>(
+        options => options.UseSqlServer(Configuration.GetConnectionString("DbCon")));
 
 
             services.AddSwaggerGen(c =>

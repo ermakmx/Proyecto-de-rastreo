@@ -6,8 +6,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace modelos
 {
-    public class dbContexto: DbContext
+    public class ApplicationDbContext: DbContext
     {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        : base(options)
+    {
+    }
+
+  
         public DbSet<usuario> usuarios {get; set;}
         public DbSet<recurso> recursos {get; set;}
         public DbSet<lugar> lugares {get; set;}
@@ -52,9 +58,9 @@ namespace modelos
         [Required]
         public string domicilio {get;set;}
         [Required]
-        public decimal latitud {get;set;}
+        public double latitud {get;set;}
         [Required]
-        public decimal longitud {get; set;}
+        public double longitud {get; set;}
         public bool active {get;set;} = true;       
 
     }
@@ -92,12 +98,12 @@ namespace modelos
         [Key]
         public int PuntoId{get; set;}
         public int GLId{get;set;}
-        [ForeignKey("GLid")]
+        [ForeignKey("GLId")]
         public geolug geolug {get;set;}
          [Required]
-        public decimal latitud {get;set;}
+        public double latitud {get;set;}
         [Required]
-        public decimal longitud {get; set;}
+        public double longitud {get; set;}
         public bool active {get;set;} = true;       
        
     }
