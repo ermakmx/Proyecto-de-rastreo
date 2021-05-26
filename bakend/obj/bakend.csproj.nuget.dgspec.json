@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/xtr/Desktop/complete/back/bakend/bakend.csproj": {}
+    "/home/xtr/Documentos/Proyecto-de-rastreo/bakend/bakend.csproj": {}
   },
   "projects": {
-    "/home/xtr/Desktop/complete/back/bakend/bakend.csproj": {
+    "/home/xtr/Documentos/Proyecto-de-rastreo/bakend/bakend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/xtr/Desktop/complete/back/bakend/bakend.csproj",
+        "projectUniqueName": "/home/xtr/Documentos/Proyecto-de-rastreo/bakend/bakend.csproj",
         "projectName": "bakend",
-        "projectPath": "/home/xtr/Desktop/complete/back/bakend/bakend.csproj",
+        "projectPath": "/home/xtr/Documentos/Proyecto-de-rastreo/bakend/bakend.csproj",
         "packagesPath": "/home/xtr/.nuget/packages/",
-        "outputPath": "/home/xtr/Desktop/complete/back/bakend/obj/",
+        "outputPath": "/home/xtr/Documentos/Proyecto-de-rastreo/bakend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/xtr/.nuget/NuGet/NuGet.Config"

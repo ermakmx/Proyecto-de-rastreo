@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wUEDAa2eDKiqL1Gey1cCf4UuEaUSMGRRX8mkhwynrWKn41Oq0YAgyyt+KthMoWmUuoox8/qNEr9FnjWKIlSs2A==",
+  "dgSpecHash": "XcWGivJNzEiPDH2vwzyzaFbAkw1xcskDs4qOp36sOfV0Z00hT0fxRJxyDw8sqNz8tavJO2sJ+6XKAlqI7dBucA==",
   "success": true,
-  "projectFilePath": "/home/xtr/Desktop/complete/back/bakend/bakend.csproj",
+  "projectFilePath": "/home/xtr/Documentos/Proyecto-de-rastreo/bakend/bakend.csproj",
   "expectedPackageFiles": [
     "/home/xtr/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/xtr/.nuget/packages/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
