@@ -21,6 +21,7 @@ namespace modelos
         public DbSet<geolug> geolugares {get; set;}
         public DbSet<punto> puntos {get; set;}
         public DbSet<ent_sal> EntradasSalidas {get; set;}
+        public DbSet<posicion> posiciones {get; set;}
     }
     [Table("Usuario")]
     public class usuario
@@ -106,6 +107,20 @@ namespace modelos
         public double longitud {get; set;}
         public bool active {get;set;} = true;       
        
+    }
+
+    public class posicion {
+        [Key]
+        public int PosId { get; set;}
+        public int RecursoId{get;set;}
+        [ForeignKey("RecursoId")]
+        public recurso recurso{get;set;}
+        [Required]
+        public double latitud {get;set;}
+        [Required]
+        public double longitud {get; set;}
+        [Timestamp]
+        public byte FStamp {get; set;}
     }
 
     public class ent_sal{
