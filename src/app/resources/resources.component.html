@@ -1,0 +1,36 @@
+<div class="container">
+    <form [formGroup]="formresources" class="normal-form">
+        <mat-grid-list cols="1" rowHeight="300px" class="content">
+            <mat-grid-tile>
+                <div class="controles-container">
+                    <input type="hidden" formControlName="$key">
+               
+                <mat-form-field>
+                    <input formControlName="nombre" matInput placeholder="Nombre dispositivo">
+                    <mat-error>
+                        <mat-error *ngIf="formresources.controls['nombre'].errors?.required">Esté Campo es obligatorio</mat-error>
+                        <mat-error *ngIf="formresources.controls['nombre'].errors?.maxlength">Máximo 30 carácteres</mat-error>
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="tipo" matInput placeholder="Tipo de dispositivo">
+                    <mat-error>
+                        <mat-error *ngIf="formresources.controls['tipo'].errors?.required">Esté Campo es obligatorio</mat-error>
+                        <mat-error *ngIf="formresources.controls['tipo'].errors?.maxlength">Máximo 30 carácteres</mat-error>
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input  formControlName="activo" matInput placeholder="Activo?">
+                    <mat-error>
+                        <mat-error *ngIf="formresources.controls['tipo'].errors?.maxlength">Máximo 30 carácteres</mat-error>
+                        <mat-error *ngIf="formresources.controls['tipo'].errors?.required">Esté Campo es obligatorio</mat-error>
+                    </mat-error>
+                </mat-form-field>
+                <div class="button-row">
+                    <button mat-raised-button color="primary" type="submit" [disabled]="formresources.invalid">Añadir</button>
+                    <button mat-raised-button color="clear" (click)="clean()">Limpiar</button>
+                </div>
+            </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </form>
