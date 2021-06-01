@@ -1,0 +1,36 @@
+<div class="container">
+    <form [formGroup]="formplaces" class="normal-form">
+        <mat-grid-list cols="1" rowHeight="300px" class="content">
+            <mat-grid-tile>
+                <div class="controles-container">
+                    <input type="hidden" formControlName="$key">
+               
+                <mat-form-field>
+                    <input formControlName="nombre" matInput placeholder="Nombre del lugar">
+                    <mat-error>
+                        <mat-error *ngIf="formplaces.controls['nombre'].errors?.required">Esté Campo es obligatorio</mat-error>
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="direccion" matInput placeholder="Dirección">
+                    <mat-error>
+                        <mat-error *ngIf="formplaces.controls['direccion'].errors?.required">Esté Campo es obligatorio</mat-error>
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="longitud" matInput placeholder="Longitud">
+                    <mat-error>
+                        
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="latitud" matInput placeholder="Latitud">
+                    <mat-error>
+                        
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </form>
+</div>

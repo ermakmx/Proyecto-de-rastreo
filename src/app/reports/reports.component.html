@@ -1,0 +1,37 @@
+<div class="container">
+    <form [formGroup]="formreports" class="normal-form">
+        <mat-grid-list cols="1" rowHeight="300px" class="content">
+            <mat-grid-tile>
+                <div class="controles-container">
+                    <input type="hidden" formControlName="$key">
+               
+                <mat-form-field>
+                    <input formControlName="nombre" matInput placeholder="Título">
+                    <mat-error>
+                        <mat-error *ngIf="formreports.controls['nombre'].errors?.required">Esté Campo es obligatorio</mat-error>
+                        <mat-error *ngIf="formreports.controls['nombre'].errors?.maxlength">Máximo 30 carácteres</mat-error>
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="detallereporte" matInput placeholder="Detalles">
+                    <mat-error>
+                        <mat-error *ngIf="formreports.controls['detallereporte'].errors?.required">Esté Campo es obligatorio</mat-error>
+                        <mat-error *ngIf="formreports.controls['detallereporte'].errors?.maxlength">Máximo 100 carácteres</mat-error>
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input type="date" formControlName="fecha" matInput placeholder="Fecha">
+                    <mat-error>
+                        <mat-error *ngIf="formreports.controls['detallereporte'].errors?.maxlength">Máximo 12 carácteres</mat-error>
+                        <mat-error *ngIf="formreports.controls['detallereporte'].errors?.required">Esté Campo es obligatorio</mat-error>
+                    </mat-error>
+                </mat-form-field>
+                <div class="button-row">
+                    <button mat-raised-button color="primary" type="submit" [disabled]="formreports.invalid">Añadir</button>
+                    <button mat-raised-button color="clear" (click)="clean()">Limpiar</button>
+                </div>
+            </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </form>
+</div>

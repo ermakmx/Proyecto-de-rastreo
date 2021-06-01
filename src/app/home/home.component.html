@@ -1,0 +1,54 @@
+<mat-toolbar class="mat-elevation-z8">
+  <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+      <mat-icon *ngIf="!sidenav.opened">
+          menu
+      </mat-icon>
+      <mat-icon *ngIf="sidenav.opened">
+          close
+      </mat-icon>
+  </button>
+  
+  
+</mat-toolbar>
+
+<mat-sidenav-container>
+
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+   
+   <button [routerLink]="['users']" mat-button class="menu-button">
+     <mat-icon>person</mat-icon>
+     <span>Usuarios</span>
+   </button>  
+   <button [routerLink]="['places']" mat-button class="menu-button">
+     <mat-icon>place</mat-icon>
+     <span>Lugares</span>
+   </button>
+   <button [routerLink]="['reports']" mat-button class="menu-button">
+     <mat-icon>report</mat-icon>
+     <span>  Reportes</span>
+   </button>
+   <button [routerLink]="['resources']" mat-button class="menu-button">
+     <mat-icon>phone</mat-icon>
+     <span>Recursos</span>
+   </button>
+   <button [routerLink]="['login']" mat-button class="menu-button">
+     <mat-icon>logout</mat-icon>
+     <span>Cerrar sesión</span>
+   </button>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z4">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14811.485286443187!2d-102.24334835!3d21.8624986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1622234888206!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+   
+
+  </mat-sidenav-content>
+  
+</mat-sidenav-container>
+
+  
+  
+  
+
+    
