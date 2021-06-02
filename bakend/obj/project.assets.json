@@ -8951,11 +8951,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/xtr/Documentos/Proyecto-de-rastreo/bakend/bakend.csproj",
+      "projectUniqueName": "/home/xtr/proyectos/Proyecto-de-rastreo/bakend/bakend.csproj",
       "projectName": "bakend",
-      "projectPath": "/home/xtr/Documentos/Proyecto-de-rastreo/bakend/bakend.csproj",
+      "projectPath": "/home/xtr/proyectos/Proyecto-de-rastreo/bakend/bakend.csproj",
       "packagesPath": "/home/xtr/.nuget/packages/",
-      "outputPath": "/home/xtr/Documentos/Proyecto-de-rastreo/bakend/obj/",
+      "outputPath": "/home/xtr/proyectos/Proyecto-de-rastreo/bakend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/xtr/.nuget/NuGet/NuGet.Config"
@@ -9027,7 +9027,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
       }
     }
   },

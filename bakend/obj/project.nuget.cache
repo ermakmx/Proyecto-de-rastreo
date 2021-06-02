@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VdI3a7FP9q/iXDGp1mI2XGkRhuKRtIhHVTePblZ2V6A7Cbd1Xhf3gFTH02qPr8dCnKsvKXXhJkXOPDELnpCHrQ==",
+  "dgSpecHash": "GbsmvlX76PEHbYDsoipOYQDy4hqwOZV7AaWxOZUb7PJSlKIVE+yJQgPRYMYqi/XjVdoBnM5Nj3ZhIwebsFbwkQ==",
   "success": true,
-  "projectFilePath": "/home/xtr/Documentos/Proyecto-de-rastreo/bakend/bakend.csproj",
+  "projectFilePath": "/home/xtr/proyectos/Proyecto-de-rastreo/bakend/bakend.csproj",
   "expectedPackageFiles": [
     "/home/xtr/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/xtr/.nuget/packages/microsoft.aspnet.webapi.client/5.2.7/microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
