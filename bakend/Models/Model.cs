@@ -115,6 +115,10 @@ namespace modelos
         public int RecursoId{get;set;}
         [ForeignKey("RecursoId")]
         public recurso recurso{get;set;}
+
+        public int UsuarioId{get;set;}
+        [ForeignKey("UsuarioId")]
+        public usuario usuario{get;set;}
         [Required]
         public double latitud {get;set;}
         [Required]

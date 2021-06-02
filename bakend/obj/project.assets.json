@@ -9027,7 +9027,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
       }
     }
   },

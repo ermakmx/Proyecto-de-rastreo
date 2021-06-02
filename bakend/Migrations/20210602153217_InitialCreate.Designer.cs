@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using modelos;
 
 namespace bakend.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210602153217_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -156,9 +158,6 @@ namespace bakend.Migrations
                     b.Property<int>("RecursoId")
                         .HasColumnType("int");
 
-                    b.Property<int>("UsuarioId")
-                        .HasColumnType("int");
-
                     b.Property<double>("latitud")
                         .HasColumnType("float");
 
@@ -168,8 +167,6 @@ namespace bakend.Migrations
                     b.HasKey("PosId");
 
                     b.HasIndex("RecursoId");
-
-                    b.HasIndex("UsuarioId");
 
                     b.ToTable("posiciones");
                 });
@@ -308,15 +305,7 @@ namespace bakend.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("modelos.usuario", "usuario")
-                        .WithMany()
-                        .HasForeignKey("UsuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("recurso");
-
-                    b.Navigation("usuario");
                 });
 
             modelBuilder.Entity("modelos.punto", b =>
