@@ -6,8 +6,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace modelos
 {
+    
     public class ApplicationDbContext: DbContext
     {
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {   
+        
+        modelBuilder.Entity<posicion>()
+        .Property(b => b.FStamp)
+        .HasDefaultValueSql("getdate()");
+    }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
     {
@@ -59,9 +67,11 @@ namespace modelos
         [Required]
         public string domicilio {get;set;}
         [Required]
-        public double latitud {get;set;}
+        [Column(TypeName = "decimal(9, 6)")]
+        public decimal latitud {get;set;}
         [Required]
-        public double longitud {get; set;}
+        [Column(TypeName = "decimal(9, 6)")]
+        public decimal longitud {get; set;}
         public bool active {get;set;} = true;       
 
     }
@@ -102,14 +112,17 @@ namespace modelos
         [ForeignKey("GLId")]
         public geolug geolug {get;set;}
          [Required]
-        public double latitud {get;set;}
+         [Column(TypeName = "decimal(9, 6)")]
+        public decimal latitud {get;set;}
         [Required]
-        public double longitud {get; set;}
+        [Column(TypeName = "decimal(9, 6)")]
+        public decimal longitud {get; set;}
         public bool active {get;set;} = true;       
        
     }
 
     public class posicion {
+        
         [Key]
         public int PosId { get; set;}
         public int RecursoId{get;set;}
@@ -120,11 +133,14 @@ namespace modelos
         [ForeignKey("UsuarioId")]
         public usuario usuario{get;set;}
         [Required]
-        public double latitud {get;set;}
+        [Column(TypeName = "decimal(9, 6)")]
+        public decimal latitud {get;set;}
         [Required]
-        public double longitud {get; set;}
-        [Timestamp]
-        public byte FStamp {get; set;}
+        [Column(TypeName = "decimal(9, 6)")]
+        public decimal longitud {get; set;}
+        [DataType(DataType.Date)]
+        public DateTime FStamp {get; set;}
+    
     }
 
     public class ent_sal{
