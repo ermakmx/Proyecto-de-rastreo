@@ -406,3 +406,4 @@
 /home/xtr/proyectos/Proyecto-de-rastreo/bakend/obj/Debug/net5.0/bakend.RazorTargetAssemblyInfo.cache
 /home/xtr/proyectos/Proyecto-de-rastreo/bakend/obj/Debug/net5.0/bakend.csproj.CopyComplete
 /home/xtr/proyectos/Proyecto-de-rastreo/bakend/obj/Debug/net5.0/bakend.genruntimeconfig.cache
+/home/xtr/proyectos/Proyecto-de-rastreo/bakend/bin/Debug/net5.0/BCrypt.Net-Next.dll

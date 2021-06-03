@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "YTzrmIS0WdenHlzjS0MKIjEyyane6NtHWIWW/DzwNVksYOF4NMHbPjY3leoSb8bERKV18sIVEGeyOlyRw2v+oQ==",
+  "dgSpecHash": "LZWqyCs0k451N6b8/Oh92TwkeM2j2lkrwDECqx3PFED7btobQEI5bzpbY/YQm1JJLFy5CDnnVuCdF/zfH2XIgQ==",
   "success": true,
   "projectFilePath": "/home/xtr/proyectos/Proyecto-de-rastreo/bakend/bakend.csproj",
   "expectedPackageFiles": [
+    "/home/xtr/.nuget/packages/bcrypt.net-next/4.0.2/bcrypt.net-next.4.0.2.nupkg.sha512",
     "/home/xtr/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/xtr/.nuget/packages/microsoft.aspnet.webapi.client/5.2.7/microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "/home/xtr/.nuget/packages/microsoft.aspnet.webapi.core/5.2.7/microsoft.aspnet.webapi.core.5.2.7.nupkg.sha512",

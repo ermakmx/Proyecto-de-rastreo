@@ -9,12 +9,16 @@ namespace modelos
     
     public class ApplicationDbContext: DbContext
     {
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {   
-        
-        modelBuilder.Entity<posicion>()
-        .Property(b => b.FStamp)
-        .HasDefaultValueSql("getdate()");
+            protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {   
+            
+            modelBuilder.Entity<posicion>()
+            .Property(b => b.FStamp)
+            .HasDefaultValueSql("getdate()");
+
+            modelBuilder.Entity<usuario>(entity => {
+            entity.HasIndex(e => e.correo).IsUnique();
+        });
     }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)

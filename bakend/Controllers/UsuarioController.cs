@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using modelos;
 
+
+
 namespace bakend.Controllers
 {
     
@@ -80,6 +82,8 @@ namespace bakend.Controllers
         [HttpPost]
         public async Task<ActionResult<usuario>> Postusuario(usuario usuario)
         {
+            string hpass = BCrypt.Net.BCrypt.HashPassword(usuario.password);
+            usuario.password = (hpass);
             _context.usuarios.Add(usuario);
             await _context.SaveChangesAsync();
 
