@@ -25,7 +25,7 @@ namespace modelos
     {
     }
 
-  
+        public DbSet<usuario> Usuario { get; set; }
         public DbSet<usuario> usuarios {get; set;}
         public DbSet<recurso> recursos {get; set;}
         public DbSet<lugar> lugares {get; set;}

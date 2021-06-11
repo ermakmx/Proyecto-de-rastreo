@@ -8989,24 +8989,26 @@
     ]
   },
   "packageFolders": {
-    "/home/xtr/.nuget/packages/": {}
+    "C:\\Users\\German\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/xtr/proyectos/Proyecto-de-rastreo/bakend/bakend.csproj",
+      "projectUniqueName": "C:\\Users\\German\\Desktop\\project\\ProyectRastreo\\Proyecto-de-rastreo\\bakend\\bakend.csproj",
       "projectName": "bakend",
-      "projectPath": "/home/xtr/proyectos/Proyecto-de-rastreo/bakend/bakend.csproj",
-      "packagesPath": "/home/xtr/.nuget/packages/",
-      "outputPath": "/home/xtr/proyectos/Proyecto-de-rastreo/bakend/obj/",
+      "projectPath": "C:\\Users\\German\\Desktop\\project\\ProyectRastreo\\Proyecto-de-rastreo\\bakend\\bakend.csproj",
+      "packagesPath": "C:\\Users\\German\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\German\\Desktop\\project\\ProyectRastreo\\Proyecto-de-rastreo\\bakend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/xtr/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\German\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -9074,7 +9076,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   },

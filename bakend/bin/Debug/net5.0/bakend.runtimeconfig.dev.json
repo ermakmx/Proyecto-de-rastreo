@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/home/xtr/.dotnet/store/|arch|/|tfm|",
-      "/home/xtr/.nuget/packages"
+      "C:\\Users\\German\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\German\\.nuget\\packages"
     ]
   }
 }
